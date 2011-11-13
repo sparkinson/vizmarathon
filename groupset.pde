@@ -37,9 +37,9 @@ class groupset{
     for (int i = 0; i < people.length; i++)
     {
       people[i].fX = fX_ + people[i].unscaledWidth * fScale * 
-        (i - (i/nWide) * nWide);
+        (i - int(i/nWide) * nWide);
       people[i].fY = fY_ + people[i].unscaledHeight * fScale * 
-        (i/nWide);  
+        int(i/nWide);  
     }    
   }
   
