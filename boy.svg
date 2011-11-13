@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="27.602509"
+   height="56.321999"
+   id="svg3276"
+   version="1.1"
+   inkscape:version="0.48.1 r9760"
+   sodipodi:docname="New document 11">
+  <defs
+     id="defs3278" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="20.033471"
+     inkscape:cy="27.159456"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="433"
+     inkscape:window-height="421"
+     inkscape:window-x="437"
+     inkscape:window-y="54"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3281">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-369.05834,-624.20118)">
+    <g
+       transform="translate(347.43785,584.05018)"
+       id="g29">
+      <path
+         style="fill:#6598cb"
+         inkscape:connector-curvature="0"
+         d="m 43.077,44.839 c 0,2.586 -2.095,4.682 -4.679,4.682 -2.591,0 -4.69,-2.096 -4.69,-4.682 0,-2.588 2.1,-4.688 4.69,-4.688 2.584,0 4.679,2.1 4.679,4.688 z"
+         id="path31" />
+      <path
+         style="fill:#6598cb"
+         inkscape:connector-curvature="0"
+         d="m 32.248,50.732 c -2.87,0 -4.686,2.87 -4.686,4.909 0,2.041 0,15.238 0,15.238 0,1.085 0.88,1.965 1.965,1.965 1.083,0 1.963,-0.88 1.963,-1.965 0,0 0,-11.156 0,-12.215 0,-1.058 1.138,-0.905 1.138,-0.301 0,0.602 0,16.272 0,16.272 0,0 0,14.355 0,19.118 0,0.118 0.009,0.227 0.03,0.332 0.167,1.343 1.298,2.388 2.688,2.388 1.437,0 2.601,-1.122 2.7,-2.536 0.014,-0.062 0.014,-0.124 0.014,-0.184 0,-1.89 0,-19.497 0,-20.276 0,-0.319 0.157,-0.382 0.307,-0.424 h 0.051 c 0.15,0.042 0.307,0.104 0.307,0.424 0,0.779 0,18.387 0,20.276 0,0.06 0,0.122 0.014,0.184 0.1,1.414 1.263,2.536 2.7,2.536 1.391,0 2.521,-1.045 2.688,-2.388 0.021,-0.105 0.03,-0.214 0.03,-0.332 0,-4.763 0,-19.118 0,-19.118 0,0 0,-15.671 0,-16.272 0,-0.604 1.138,-0.757 1.138,0.301 0,1.059 0,12.215 0,12.215 0,1.085 0.88,1.965 1.963,1.965 1.085,0 1.965,-0.88 1.965,-1.965 0,0 0,-13.197 0,-15.238 0,-2.039 -1.816,-4.909 -4.686,-4.909 H 32.248 z"
+         id="path33" />
+      <g
+         id="g35">
+        <polygon
+           style="fill:#6598cb"
+           points="22.338,73.267 22.954,73.972 26.312,73.816 29.911,70.669 29.347,70.024 25.942,73 "
+           id="polygon37" />
+        <polygon
+           style="fill:#6598cb"
+           points="25.761,77.183 25.145,76.478 25.748,73.171 29.347,70.024 29.912,70.669 26.507,73.646 "
+           id="polygon39" />
+      </g>
+      <path
+         style="fill:none;stroke:#6598cb;stroke-width:0.25"
+         inkscape:connector-curvature="0"
+         d="m 25.413,76.786 c -0.779,0.779 -1.945,1.237 -1.945,1.904 0,0.589 -0.172,0.745 -0.469,0.745 -0.208,0 -0.367,-0.131 -0.367,-0.495 0,-0.364 -0.081,-0.458 -0.581,-1.458 -0.5,-1 -0.474,-2.422 0.661,-3.959"
+         id="path41" />
+      <polygon
+         style="fill:#6598cb;stroke:#ffffff;stroke-width:0.25"
+         points="29.912,70.669 29.347,70.024 25.942,73 22.338,73.267 22.954,73.972 25.625,73.848 25.145,76.478 25.761,77.183 26.507,73.646 "
+         id="polygon43" />
+    </g>
+  </g>
+</svg>
