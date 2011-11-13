@@ -74,8 +74,6 @@ class person{
   {
     smooth();
     oShape.disableStyle();
-    print (iAnswerKey);
-    print (" ");
     fill(oColour);
     noStroke();
     shape(oShape, fX, fY);  
