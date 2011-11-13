@@ -36,26 +36,26 @@ void setup(){
   groups = new groupset(6);
   
   groups.addPeople(171, 0, 1, 2, 10);
-  groups.addPeopleToSelect(26, 2, 0, 0, 0);
-  groups.addPeopleToSelect(28, 2, 1, 0, 0);
-  groups.addPeopleToSelect(23, 2, 2, 0, 0);
-  groups.addPeopleToSelect(12, 2, 0, 0, 1);
-  groups.addPeopleToSelect(14, 2, 1, 0, 1);
-  groups.addPeopleToSelect(17, 2, 2, 0, 1);
-  groups.addPeopleToSelect(11, 2, 0, 0, 2);
-  groups.addPeopleToSelect(13, 2, 1, 0, 2);
-  groups.addPeopleToSelect(17, 2, 2, 0, 2);
-  groups.addPeopleToSelect(13, 2, 0, 0, 3);
-  groups.addPeopleToSelect(14, 2, 1, 0, 3);
-  groups.addPeopleToSelect(18, 2, 2, 0, 3);
-  groups.addPeopleToSelect(17, 2, 0, 0, 4);
-  groups.addPeopleToSelect(23, 2, 1, 0, 4);
-  groups.addPeopleToSelect(28, 2, 2, 0, 4);
-  groups.addPeopleToSelect(8, 2, 0, 0, 5);
-  groups.addPeopleToSelect(8, 2, 1, 0, 5);
-  groups.addPeopleToSelect(9, 2, 2, 0, 5);
+  groups.addPeopleToSelect(22, 2, 0, 0, 0);
+  groups.addPeopleToSelect(19, 2, 1, 0, 0);
+  groups.addPeopleToSelect(17, 2, 2, 0, 0);
+  groups.addPeopleToSelect(7, 2, 0, 0, 1);
+  groups.addPeopleToSelect(8, 2, 1, 0, 1);
+  groups.addPeopleToSelect(7, 2, 2, 0, 1);
+  groups.addPeopleToSelect(4, 2, 0, 0, 2);
+  groups.addPeopleToSelect(2, 2, 1, 0, 2);
+  groups.addPeopleToSelect(3, 2, 2, 0, 2);
+  groups.addPeopleToSelect(5, 2, 0, 0, 3);
+  groups.addPeopleToSelect(4, 2, 1, 0, 3);
+  groups.addPeopleToSelect(4, 2, 2, 0, 3);
+  groups.addPeopleToSelect(13, 2, 0, 0, 4);
+  groups.addPeopleToSelect(12, 2, 1, 0, 4);
+  groups.addPeopleToSelect(11, 2, 2, 0, 4);
+  groups.addPeopleToSelect(20, 2, 0, 0, 5);
+  groups.addPeopleToSelect(20, 2, 1, 0, 5);
+  groups.addPeopleToSelect(18, 2, 2, 0, 5);
   
-  String[] labels = {"Finance", "Resources", "Society", "Security", "Personal Issues", "Global Crises"};
+  String[] labels = {"Excitement", "Triumph", "Fear", "Anxiety", "Inspiration", "Pride"};
   int[] keys = {0,1,2,3,4,5};
   oOptions = new options(labels, keys);
   
