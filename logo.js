@@ -21,6 +21,8 @@
       if (Math.pow(x-blue_center_x*width, 2) + Math.pow(y-blue_center_y*width, 2) < Math.pow((radius*width), 2)) {
         var image = $('#olympic_logo');
         image.fadeOut('fast', function () {
+            window.location = "index.html";
+
             image.attr('src', 'logo_blue.svg');
             image.fadeIn('fast');
         });
@@ -30,6 +32,7 @@
       else if (Math.pow(x-yellow_center_x*width, 2) + Math.pow(y-yellow_center_y*width, 2) < Math.pow((radius*width), 2)) {
         var image = $('#olympic_logo');
         image.fadeOut('fast', function () {
+            window.location = "index_benefits.html";
             image.attr('src', 'logo_yellow.svg');
             image.fadeIn('fast');
         });
@@ -38,6 +41,7 @@
       else if (Math.pow(x-black_center_x*width, 2) + Math.pow(y-black_center_y*width, 2) < Math.pow((radius*width), 2)) {
         var image = $('#olympic_logo');
         image.fadeOut('fast', function () {
+            window.location = "index_state.html";
             image.attr('src', 'logo_black.svg');
             image.fadeIn('fast');
         });
@@ -46,6 +50,7 @@
       else if (Math.pow(x-green_center_x*width, 2) + Math.pow(y-green_center_y*width, 2) < Math.pow((radius*width), 2)) {
         var image = $('#olympic_logo');
         image.fadeOut('fast', function () {
+            window.location = "index_environment.html";
             image.attr('src', 'logo_green.svg');
             image.fadeIn('fast');
         });
@@ -54,6 +59,7 @@
       else if (Math.pow(x-red_center_x*width, 2) + Math.pow(y-red_center_y*width, 2) < Math.pow((radius*width), 2)) {
         var image = $('#olympic_logo');
         image.fadeOut('fast', function () {
+            window.location = "index_emotions.html";
             image.attr('src', 'logo_red.svg');
             image.fadeIn('fast');
         });
