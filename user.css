@@ -63,8 +63,9 @@ html, body {
 }
 
 #olympic_logo {
-  width:600px;
+  width:320px;
   display: block;
+  text-align: center;
 }
 
 .canvas {
@@ -72,10 +73,10 @@ html, body {
 }
 
 .category {
-  padding-top: 100px;
   display:block;
   float: right;
   text-align: right;
+  vertical-align: middle;
 }
 
 .full-height {
