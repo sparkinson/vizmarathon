@@ -3,17 +3,19 @@ class person{
   int iGender;
   int iAgeGroup;
   int iRegionID;
+  int iAnswerKey;
   float fScale = 1.0;
   float fX;
   float fY;
   color oColour;
-  float unscaledWidth = 45;
-  float unscaledHeight = 90;
+  float unscaledWidth = 46;
+  float unscaledHeight = 100;
   
-  person(int iGender_, int iAgeGroup_, int iRegionID_)  {
+  person(int iGender_, int iAgeGroup_, int iRegionID_, int iAnswerKey_)  {
     iGender = iGender_;
     iAgeGroup = iAgeGroup_;
     iRegionID = iRegionID_;
+    iAnswerKey = iAnswerKey_;
     this.loadGraphic();
     this.setColour();
   }
@@ -28,7 +30,7 @@ class person{
         oColour = color(252,178,80);
         break;
       case 2:
-        oColour = color(100,100,255);
+        oColour = color(200,200,200);
         break;
     }
   }
@@ -68,10 +70,12 @@ class person{
     }  
   }
   
-  void show()
+  void show(int iSelect)
   {
     smooth();
     oShape.disableStyle();
+    print (iAnswerKey);
+    print (" ");
     fill(oColour);
     noStroke();
     shape(oShape, fX, fY);  

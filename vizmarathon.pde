@@ -1,46 +1,105 @@
 import processing.opengl.*;
 
-groupset[] groups = new groupset[2];
+PFont fontA;
 boolean refresh = true;
 
-float displayScale = 0.5;
+float displayScale = 0.60;
 float currentScale = 0.01;
 
+int iGW = 800;
+int iGH = 600;
+
+PImage oKey;
+options oOptions;
+int iSelect = -1;
+  
+int AdjustLeft = 570;
+int AdjustDown = 60;
+
+PShape[] legend = new PShape[6];
+groupset groups;
 void setup(){
-  //hint(ENABLE_OPENGL_4X_SMOOTH);
-  size(800,850); 
+  size(iGW,iGH); 
+  
+  fontA = loadFont("FreeSans-14.vlw");
+  textFont(fontA, 12);
   background(255);
-  saveFrame(); 
-  
   randomSeed(millis());
+
+  legend[0] = loadShape("boy.svg");
+  legend[1] = loadShape("man.svg");
+  legend[2] = loadShape("grandad.svg");
+  legend[3] = loadShape("girl.svg");
+  legend[4] = loadShape("women.svg");
+  legend[5] = loadShape("granny.svg");
   
-  groups[0] = new groupset();
-  groups[1] = new groupset();
+  groups = new groupset(6);
   
-  groups[0].addPeople(120, 2, 0, 0);
-  groups[0].addPeople(96, 2, 1, 1);
-  groups[0].addPeople(84, 2, 2, 2);
+  groups.addPeople(191, 0, 1, 2, 10);
+  groups.addPeopleToSelect(15, 2, 0, 0, 0);
+  groups.addPeopleToSelect(16, 2, 1, 0, 0);
+  groups.addPeopleToSelect(13, 2, 2, 0, 0);
+  groups.addPeopleToSelect(7, 2, 0, 0, 1);
+  groups.addPeopleToSelect(8, 2, 1, 0, 1);
+  groups.addPeopleToSelect(15, 2, 2, 0, 1);
+  groups.addPeopleToSelect(7, 2, 0, 0, 2);
+  groups.addPeopleToSelect(7, 2, 1, 0, 2);
+  groups.addPeopleToSelect(10, 2, 2, 0, 2);
+  groups.addPeopleToSelect(7, 2, 0, 0, 3);
+  groups.addPeopleToSelect(8, 2, 1, 0, 3);
+  groups.addPeopleToSelect(10, 2, 2, 0, 3);
+  groups.addPeopleToSelect(10, 2, 0, 0, 4);
+  groups.addPeopleToSelect(13, 2, 1, 0, 4);
+  groups.addPeopleToSelect(16, 2, 2, 0, 4);
+  groups.addPeopleToSelect(5, 2, 0, 0, 5);
+  groups.addPeopleToSelect(5, 2, 1, 0, 5);
+  groups.addPeopleToSelect(5, 2, 2, 0, 5);
   
-  groups[1].addPeople(24, 2, 0, 0);
-  groups[1].addPeople(36, 2, 1, 1);
-  groups[1].addPeople(40, 2, 2, 2);
+  String[] labels = {"Finance", "Resorces", "Society", "Security", "Personal Issues", "Global Crises"};
+  int[] keys = {0,1,2,3,4,5};
+  oOptions = new options(labels, keys);
+  
+  for(int i=0;i<6;i++){
+    legend[i].disableStyle();}
+  for(int i=0;i<6;i++){
+    legend[i].scale(0.6);}
+  
+  noLoop();
 }
 
 void draw(){
-  if (currentScale <= displayScale)
-  {
-    background(255);
-    showgroups(currentScale);
-    currentScale = currentScale + 0.01;
-  }
+  background(255);
+  smooth();
+  
+  noStroke();
+  fill(color(101,152,203));
+  shape(legend[0],AdjustLeft + 75,AdjustDown + 52);
+  shape(legend[1],AdjustLeft + 120,AdjustDown + 40);
+  shape(legend[2],AdjustLeft + 170,AdjustDown + 40);
+  shape(legend[3],AdjustLeft + 75,AdjustDown + 107);
+  shape(legend[4],AdjustLeft + 120,AdjustDown + 95);
+  shape(legend[5],AdjustLeft + 170,AdjustDown + 95);
+
+  fill(51);
+  text("16-34", AdjustLeft + 70, AdjustDown + 30);
+  text("35-54", AdjustLeft + 120, AdjustDown + 30);
+  text("55+", AdjustLeft + 170, AdjustDown + 30);
+  text("Male", AdjustLeft + 20, AdjustDown + 70);
+  text("Female", AdjustLeft + 5, AdjustDown + 130);
+
+  oOptions.show();
+  groups.addSelectToPeople(iSelect);
+  showgroups(displayScale);
 }
 
 void showgroups(float fScale)
 {
-  groups[0].setLayout(10., 10., 24, fScale);
-  groups[1].setLayout(600., 10.,8, fScale);
+  groups.setLayout(20., 55., 19, fScale);
   
-  groups[0].show();
-  groups[1].show();
+  groups.show(iSelect);
+}
+
+void mouseMoved() {
+  oOptions.check();
 }
 
