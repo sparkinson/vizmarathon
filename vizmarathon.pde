@@ -35,7 +35,7 @@ void setup(){
   
   groups = new groupset(6);
   
-  groups.addPeople(191, 0, 1, 2, 10);
+  groups.addPeople(171, 0, 1, 2, 10);
   groups.addPeopleToSelect(26, 2, 0, 0, 0);
   groups.addPeopleToSelect(28, 2, 1, 0, 0);
   groups.addPeopleToSelect(23, 2, 2, 0, 0);
@@ -55,7 +55,7 @@ void setup(){
   groups.addPeopleToSelect(8, 2, 1, 0, 5);
   groups.addPeopleToSelect(9, 2, 2, 0, 5);
   
-  String[] labels = {"Finance", "Resorces", "Society", "Security", "Personal Issues", "Global Crises"};
+  String[] labels = {"Finance", "Resources", "Society", "Security", "Personal Issues", "Global Crises"};
   int[] keys = {0,1,2,3,4,5};
   oOptions = new options(labels, keys);
   

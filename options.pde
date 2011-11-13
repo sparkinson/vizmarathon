@@ -15,6 +15,7 @@ class options{
   void check()
   {
     boolean inBox = false;
+    int oldiSelect = iSelect;
     for (int i = 0; i < buttons.length; i++)
     { 
       if (buttons[i].contains(mouseX, mouseY))
@@ -26,7 +27,9 @@ class options{
     if (inBox == false) {
       iSelect = -1;
     }
-    redraw();
+    if (iSelect != oldiSelect){
+      redraw();
+    }
   }
   
   void show()

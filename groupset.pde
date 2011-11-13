@@ -54,7 +54,7 @@ class groupset{
   void addSelectToPeople(int iKey)
   {
     this.people = new person[0];
-    this.addPeople(191, 0, 1, 2, 10);
+    this.addPeople(171, 0, 1, 2, 10);
     
     if (iKey != -1)
     {
