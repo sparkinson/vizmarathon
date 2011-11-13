@@ -7,8 +7,8 @@ class person{
   float fX;
   float fY;
   color oColour;
-  float unscaledWidth = 525;
-  float unscaledHeight = 1100;
+  float unscaledWidth = 45;
+  float unscaledHeight = 90;
   
   person(int iGender_, int iAgeGroup_, int iRegionID_)  {
     iGender = iGender_;
@@ -42,26 +42,26 @@ class person{
       case 0:
         switch(iAgeGroup) {
           case 0: 
-            oShape = loadShape("male.svg");
+            oShape = loadShape("boy.svg");
             break;
           case 1: 
-            oShape = loadShape("male.svg");
+            oShape = loadShape("man.svg");
             break;
           case 2:
-            oShape = loadShape("male.svg");
+            oShape = loadShape("grandad.svg");
             break;
         }
         break;
       case 1:
         switch(iAgeGroup) {
           case 0: 
-            oShape = loadShape("female.svg");
+            oShape = loadShape("girl.svg");
             break;
           case 1: 
-            oShape = loadShape("female.svg");
+            oShape = loadShape("women.svg");
             break;
           case 2:
-            oShape = loadShape("female.svg");
+            oShape = loadShape("granny.svg");
             break;
         }
         break;
