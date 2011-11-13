@@ -22,10 +22,10 @@ class person{
   {
     switch(iRegionID) {
       case 0: 
-        oColour = color(255,100,100);
+        oColour = color(101,152,203);
         break;
       case 1: 
-        oColour = color(100,255,100);
+        oColour = color(252,178,80);
         break;
       case 2:
         oColour = color(100,100,255);
