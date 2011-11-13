@@ -6,6 +6,10 @@ html, body {
   text-align: center; /* center align it with the container */
 }
 
+.container {
+  width: 980px;
+}
+
 /* The white background content wrapper */
 .container > .content {
   background-color: #fff;
